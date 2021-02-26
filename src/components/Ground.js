@@ -21,13 +21,13 @@ export const Ground = (props) => {
       onClick={(e) => {
         e.stopPropagation();
         const [x, y, z] = Object.values(e.point).map((coord) =>
-          Math.ceil(coord),
+          Math.ceil(coord)
         );
         addCube(x, y, z, activeTexture);
       }}
     >
-      <planeBufferGeometry attach="geometry" args={[100, 100]} />
-      <meshStandardMaterial map={texture} attach="material" />
+      <planeBufferGeometry attach='geometry' args={[100, 100]} />
+      <meshStandardMaterial map={texture} attach='material' />
     </mesh>
   );
 };

@@ -3,10 +3,10 @@ import { useStore } from './useStore';
 
 function actionByKey(key) {
   const keys = {
-    KeyW: 'moveForward',
-    KeyS: 'moveBackward',
-    KeyA: 'moveLeft',
-    KeyD: 'moveRight',
+    ArrowUp: 'moveForward',
+    ArrowDown: 'moveBackward',
+    ArrowLeft: 'moveLeft',
+    ArrowRight: 'moveRight',
     Space: 'jump',
   };
   return keys[key];
